@@ -1,0 +1,31 @@
+#!/bin/bash
+# 2-assembler: generates the assembly code of a C code.
+
+# Exit if $CFILE is not set
+if [ -z "$CFILE" ]
+then
+    echo "CFILE is not set"
+        exit 1
+	fi
+
+# Check if the given C file exists
+if [ ! -f "$CFILE" ]
+then
+    echo "$CFILE does not exist"
+        exit 1
+	fi
+
+# Extract the filename without extension and append .s
+OUTPUT="${CFILE%.c}.s"
+
+# Use gcc to generate the assembly code
+gcc -S "$CFILE" -o "$OUTPUT"
+
+# Check if the assembly file was generated successfully
+if [ $? -eq 0 ]
+then
+    echo "Assembly code saved to $OUTPUT"
+    else
+        echo "Failed to generate assembly code"
+	fi
+	
