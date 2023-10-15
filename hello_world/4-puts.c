@@ -1,4 +1,7 @@
 #include <stdio.h>
+/*
+The main function that prints 
+*/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
