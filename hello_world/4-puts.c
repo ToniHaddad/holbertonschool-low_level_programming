@@ -1,7 +1,11 @@
 #include <stdio.h>
-/*
-*The main function that prints 
-*/
+
+/**
+ * main - Entry point
+ *
+ * Description: Prints a statement
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
