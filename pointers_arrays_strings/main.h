@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 void reset_to_98(int *n);
-void swap - int(int *a, int *b) int _putchar(char c);
+int _putchar(char c);
+void swap_int(int *a, int *b);
 
 #endif /* MAIN_H */
