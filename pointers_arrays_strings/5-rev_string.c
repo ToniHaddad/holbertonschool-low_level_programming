@@ -6,16 +6,23 @@
  */
 void rev_string(char *s)
 {
-	int len = 0, index = 0;
-	char tmp;
+	int len = 0;
+	int start = 0;
+	char temp;
 
-	while (s[index++])
+	/* Find string length */
+	while (s[len])
 		len++;
 
-	for (index = len - 1; index >= len / 2; index--)
+	/* Reverse string */
+	len -= 1;
+	while (start < len)
 	{
-		tmp = s[index];
-		s[index] = s[len - index - 1];
-		s[len - index - 1] = tmp;
+		temp = s[start];
+		s[start] = s[len];
+		s[len] = temp;
+
+		start++;
+		len--;
 	}
 }
