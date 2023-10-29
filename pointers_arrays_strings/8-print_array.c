@@ -1,25 +1,37 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_array - Prints an inputted number of elements
- *               of an array of integers.
- * @a: The array of integers.
- * @n: The number of elements to be printed.
+ * puts_half - Print the second half of a string.
+ * @str: The string to be printed.
+ *
+ * Return: void.
  */
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
-	int index;
+	int len = 0;
+	int n;
 
-	for (index = 0; index < n; index++)
+	/* Calculate string length */
+	while (str[len] != '\0')
 	{
-		printf("%d", a[index]);
-
-		if (index == n - 1)
-			continue;
-
-		printf(", ");
+		len++;
 	}
 
-	printf("\n");
+	/* Check for odd length */
+	if (len % 2 == 1)
+	{
+		n = (len - 1) / 2;
+	}
+	else
+	{
+		n = len / 2;
+	}
+
+	/* Print the second half of the string */
+	for (; n < len; n++)
+	{
+		_putchar(str[n]);
+	}
+
+	_putchar('\n');
 }
