@@ -29,9 +29,9 @@ int _atoi(char *s)
             {
                 /* Handle overflow based on the sign. */
                 if (sign == 1)
-                    return INT_MAX;
+                    return (INT_MAX);
                 else
-                    return INT_MIN;
+                    return (INT_MIN);
             }
 
             res = res * 10 + (*s - '0');
