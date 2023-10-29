@@ -11,11 +11,12 @@ char *_strcat(char *dest, char *src)
 {
     int i = 0, j = 0;
 
-    // Find the end of the dest string
+    /* Find the end of the dest string */
+
     while (dest[i])
         i++;
 
-    // Append the src string to dest string
+    /*Append the src string to dest string*/
     while (src[j])
     {
         dest[i] = src[j];
@@ -23,7 +24,7 @@ char *_strcat(char *dest, char *src)
         j++;
     }
 
-    // Terminate the resulting string
+    /*Append the src string to dest string*/
     dest[i] = '\0';
 
     return dest;
