@@ -1,9 +1,14 @@
-#include "main.h"
+/*
+ * File: 101-print_number.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
+
 /**
-* print_number - prints an integer
-*@n:integer to be printed
-*
-*/
+ * print_number - Prints an integer.
+ * @n: The integer to be printed.
+ */
 void print_number(int n)
 {
 	unsigned int num = n;
