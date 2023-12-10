@@ -1,19 +1,20 @@
 #include "main.h"
+/**
+ * main - entry point
+ *
+ * Description : all s digi nbs
+ *
+ * Return: always 0 (Success)
+*/
 
 int main(void)
 {
-    char *str = "_putchar";
-    int i = 0;
+	char str[] = "_putchar";
+	int ch;
 
-    // Loop through each character in the string and print it
-    while (str[i])
-    {
-        _putchar(str[i]);
-        i++;
-    }
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
 
-    // Print a new line
-    _putchar('\n');
-
-    return (0);
+	return (0);
 }
