@@ -1,16 +1,15 @@
 #include "main.h"
-
 /**
- * add - add two integers
+ * add - adds two integrers and returns the result
  *
- * @a: first input
- * @b : second input
+ * @x: number being added
  *
- * Return: sum of a and b
-*/
-int add(int a, int b)
+ * @y: number being added
+ *
+ * Return: Always 0.
+ *
+ */
+int add(int x, int y)
 {
-	int sum = a + b;
-
-	return (sum);
+	return (x + y);
 }
