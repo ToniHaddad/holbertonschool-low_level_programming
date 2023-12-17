@@ -6,10 +6,10 @@
  * @size: size of the shash table
  * Return: the created shash table, or NULL if function fails
  */
-shash_table_t *shash_table_create(unsigned long int size)
+hash_table_t *shash_table_create(unsigned long int size)
 {
-    shash_table_t *table;
-    shash_node_t **array;
+    hash_table_t *table;
+    hash_node_t **array;
     unsigned long int i;
 
     table = malloc(sizeof(shash_table_t));
